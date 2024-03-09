@@ -1,0 +1,44 @@
+<!-- ######################################################################################## -->
+
+1. Write the appropriate tag to add an image to a page. 
+    Within the tag, make the image scale to the size of the page
+
+<img src="photo.jpg" width="100%">
+
+NOTE: Wheras a p tag will take up the entire width of the window automatically, the image tag 
+will only display a picture that takes up the space it needs based on the file size. Setting the image 
+to 100% meaning that it will occupy 100% of the current window size, regardless of how
+large of small that is, and the image will scale accordingly when the window grows or shrinks. 
+This is a sort of hack, as it can/should be done with CSS bc that is dedicated to styling.
+NOTE: the src attribute can be a file, but it can also be the wed address of an image from a site. This can 
+be accessed by right clicking on an image and choosing 'copy image address'. This can be pasted 
+directly in the img attribute. Although this is a good, quick way to access 
+images from the internet, this is considered *BAD PRACTICE* and shouldn't be done 
+in actual projects. See: hot-linking for more information. 
+<!-- ######################################################################################## -->
+
+
+<!-- VOCAB --> 
+heading: 
+- HTML text tags that are used to create larger text titles/subtitles of
+text to accompany larger chunks of writing. h1 is the largest and the 
+sizes of header decrease as the numbers after the h increas.
+- Note that broken or arbitrary headings just for styling purposes should be used; 
+for example you shouldn't use an h3 tag after only first using an h1 tag, and you 
+shouldn't choose the heading just because of the resulting font size. Headings 
+should followe a logical an sequential order to maintain a clear structure for the content. 
+The appropriate usage of elements is also important for accesibility and SEO.
+
+self-closing tag: 
+- a tag such as the one used to create an image element that does not require a pair of tags, 
+but rather just a single tag. Note that <img> and <img/> are both valid for a self closing tag,
+and the  forward slash is optional.
+
+hot-linking: 
+- this refers to the practise of using a direct link of an image file hosted on another website.
+- it is considered *BAD PRACTISE* bc it is essentially stealing content and bandwidth from another 
+site, especially if the image is copyrighted. It is also not reliable bc if the host site
+deletes the file or changes its URL, it will result in broken imags on your site. Search images 
+like Google may even penalize sites that use hot-linking in their SEO.
+With this in mind, it is advised to host your own file or use lciensed content that allow 
+embedding or sharing.
