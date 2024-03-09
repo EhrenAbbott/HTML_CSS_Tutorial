@@ -17,6 +17,26 @@ images from the internet, this is considered *BAD PRACTICE* and shouldn't be don
 in actual projects. See: hot-linking for more information. 
 <!-- ######################################################################################## -->
 
+2. Create a spot on a page that allows the user to type something in. 
+    Make it so that there is preexisting text in that spot that they can 
+    write over. 
+    Now do the same but have the user's text be masked/hidden.
+    Again but allow the user to select from a dropdown calendar. 
+    Again but allow the user to pick a time. 
+    Again but have a color palette drop down that allow's the user 
+    to select a color.
+    Once more but make a spot to upload something.
+
+<input type="text" placeholder="write here!">
+<input type="password">
+<input type="date">
+<input type="time">
+<input type="color">
+<input type="file">
+
+
+<!-- ######################################################################################## -->
+
 
 <!-- VOCAB --> 
 heading: 
@@ -26,7 +46,7 @@ sizes of header decrease as the numbers after the h increas.
 - Note that broken or arbitrary headings just for styling purposes should be used; 
 for example you shouldn't use an h3 tag after only first using an h1 tag, and you 
 shouldn't choose the heading just because of the resulting font size. Headings 
-should followe a logical an sequential order to maintain a clear structure for the content. 
+should follow a logical an sequential order to maintain a clear structure for the content. 
 The appropriate usage of elements is also important for accesibility and SEO.
 
 self-closing tag: 
@@ -36,9 +56,27 @@ and the  forward slash is optional.
 
 hot-linking: 
 - this refers to the practise of using a direct link of an image file hosted on another website.
-- it is considered *BAD PRACTISE* bc it is essentially stealing content and bandwidth from another 
+- it is considered *BAD PRACTICE* bc it is essentially stealing content and bandwidth from another 
 site, especially if the image is copyrighted. It is also not reliable bc if the host site
 deletes the file or changes its URL, it will result in broken imags on your site. Search images 
 like Google may even penalize sites that use hot-linking in their SEO.
 With this in mind, it is advised to host your own file or use lciensed content that allow 
 embedding or sharing.
+
+child: 
+- an element that exists within another element 
+
+parent:
+- an elements that contains another element within it
+
+nesting: 
+- refers to the placement of element inside other elements. 
+- An element nested inside of another is the child element to the parent
+element in which it is nested.
+
+div: 
+-stands for "divider" and is an element that functions as a container for
+other elements. It does not affect the layout or have any visual presence, 
+but rather its purpose is to allow us to target its contents to style them with 
+CSS or manipulate them with JS.
+
