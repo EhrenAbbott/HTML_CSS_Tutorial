@@ -1,0 +1,24 @@
+/* ######################################################################################## */
+
+/* 1 */
+
+/* ######################################################################################## */
+
+/* !VOCAB!  */
+
+/* selector: */
+/* -- The CSS syntactic component that indicates which element the styling will be applied to:*/
+
+/* rule */
+/* --This is the CSS term that refers to the HTML element
+being targeted (the selector) as well as the specific part of the 
+element that is to be changed and how it will be changed
+
+/* property: */ 
+/*--The specific part of the HTML element that the CSS rule is targeting, 
+such as color, margin, border etc. 
+
+/* value: */ 
+/*--The styling that will be applied to the preceeding property. For example, 
+in a CSS rule, background-color would be a property, and the specific color 
+, such as blue, would be the value

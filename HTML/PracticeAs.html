@@ -1,0 +1,148 @@
+<!-- ######################################################################################## -->
+
+1. Write the appropriate tag to add an image to a page. 
+    Within the tag, make the image scale to the size of the page
+
+<img src="photo.jpg" width="100%">
+
+NOTE: Wheras a p tag will take up the entire width of the window automatically, the image tag 
+will only display a picture that takes up the space it needs based on the file size. Setting the image 
+to 100% meaning that it will occupy 100% of the current window size, regardless of how
+large of small that is, and the image will scale accordingly when the window grows or shrinks. 
+This is a sort of hack, as it can/should be done with CSS bc that is dedicated to styling.
+NOTE: the src attribute can be a file, but it can also be the wed address of an image from a site. This can 
+be accessed by right clicking on an image and choosing 'copy image address'. This can be pasted 
+directly in the img attribute. Although this is a good, quick way to access 
+images from the internet, this is considered *BAD PRACTICE* and shouldn't be done 
+in actual projects. See: hot-linking for more information. 
+<!-- ######################################################################################## -->
+
+2. Create a spot on a page that allows the user to type something in. 
+    Make it so that there is preexisting text in that spot that they can 
+    write over. 
+    Now do the same but have the user's text be masked/hidden.
+    Again but allow the user to select from a dropdown calendar. 
+    Again but allow the user to pick a time. 
+    Again but have a color palette drop down that allow's the user 
+    to select a color.
+    Once more but make a spot to upload something.
+
+<input type="text" placeholder="write here!">
+<input type="password">
+<input type="date">
+<input type="time">
+<input type="color">
+<input type="file">
+
+
+<!-- ######################################################################################## -->
+
+3. Write a sentence and have only one word in that sentence link to a website
+    that opens in a new tab
+
+<p>Your sentence 
+    <a href="google.com" target="_blank">here</a>
+</p>
+
+NOTE: The indentation/spacing is just to make it more easy to read/ follow visually 
+It would work the same if it were all on one line.
+
+<!-- ######################################################################################## -->
+
+4. Create the basic HTML structure for a page with all the necessary metadata tags. 
+
+<!doctype html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+    </body>
+</html>
+
+NOTE: The doctype tag just tells the browser that we are using HTML5 and not HTML4.
+<!-- ######################################################################################## -->
+
+5. Create a description list with three children, each having a the two appropriate tags.
+<dl>
+    <dt>Name</dt>
+    <dd>Garfield</dd>
+    <dt>Born</dt>
+    <dd>19 June 1978</dd>
+    <dt>Color</dt>
+    <dd>Orange</dd>
+</dl>
+
+<!-- ######################################################################################## -->
+
+
+
+<!-- VOCAB --> 
+heading: 
+- HTML text tags that are used to create larger text titles/subtitles of
+text to accompany larger chunks of writing. h1 is the largest and the 
+sizes of header decrease as the numbers after the h increas.
+- Note that broken or arbitrary headings just for styling purposes should be used; 
+for example you shouldn't use an h3 tag after only first using an h1 tag, and you 
+shouldn't choose the heading just because of the resulting font size. Headings 
+should follow a logical an sequential order to maintain a clear structure for the content. 
+The appropriate usage of elements is also important for accesibility and SEO.
+
+self-closing tag: 
+- a tag such as the one used to create an image element that does not require a pair of tags, 
+but rather just a single tag. Note that <img> and <img/> are both valid for a self closing tag,
+and the  forward slash is optional.
+
+hot-linking: 
+- this refers to the practise of using a direct link of an image file hosted on another website.
+- it is considered *BAD PRACTICE* bc it is essentially stealing content and bandwidth from another 
+site, especially if the image is copyrighted. It is also not reliable bc if the host site
+deletes the file or changes its URL, it will result in broken imags on your site. Search images 
+like Google may even penalize sites that use hot-linking in their SEO.
+With this in mind, it is advised to host your own file or use lciensed content that allow 
+embedding or sharing.
+
+child: 
+- an element that exists within another element 
+
+parent:
+- an elements that contains another element within it
+
+nesting: 
+- refers to the placement of element inside other elements. 
+- An element nested inside of another is the child element to the parent
+element in which it is nested.
+
+div: 
+-stands for "divider" and is an element that functions as a container for
+other elements. It does not affect the layout or have any visual presence, 
+but rather its purpose is to allow us to target its contents to style them with 
+CSS or manipulate them with JS.
+
+anchor tag:
+-the HTML element that creates links: <a>Link</a>
+
+body tag: 
+- In your HTML document, this is where you place the tags that you will actually see
+on the page.
+
+head tag: 
+- This is the HTML tag that contains child tags related to metadata, such as, 
+the link to the stylesheet, title tag, info on how the page gets displayed
+on smaller screens/different platforms etc.
+
+description list, <dl></dl>: 
+- a sort of contsiner for a list of terms and their associated descriptions
+- this tag is used to display a glossary of terms or to display metadata as key-value pairs 
+- <dl> is the parent element that contains <dt> tags, standing for 'description term', 
+    and their associated <dd> tags, which stands for description details.
+- you can have multiple dd tags as well as multiple dt tags for the same pair
+
+
+web standards: 
+- the specifications defining the technlogies we use to build the web
+- they are important for ensuring the internet content is accessible, reliable and 
+compatible across different browsers, devices and platforms. 
+- the primary organization responsible for setting these best standards is the 
+world wide web consortium (AKA w3c)
