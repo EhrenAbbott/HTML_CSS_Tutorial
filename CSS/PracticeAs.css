@@ -6,18 +6,27 @@ two elements sit next to one another on the horizontal axis.
 What styling would you add to these two elements to make it so they
 are always position vertically regardless of the window size? */ 
 
-/* <body>
+/* -----HTML-----
+<body>
     <img src="google.png" />
     <input type="text" />
-</body> */
+</body>
 
-img { 
+-----CSS-----
+div { 
     display: block;
-}
+} */
 
-input { 
-    display: block;
-}
+/* ######################################################################################## */
+
+/* 2. If you have an image inside of a div and want to create some space 
+above the image, would you add the margin to the image or to the div it 
+sits inside? Why?
+
+You would add the margin to the div because if its content gets changed, for example 
+if the image is replaced with another element such as a video, the margin
+stylign would remain and would not be applied to an element that is subject 
+to change.
 
 /* ######################################################################################## */
 
