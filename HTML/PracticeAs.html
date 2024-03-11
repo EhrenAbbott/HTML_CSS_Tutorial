@@ -76,6 +76,33 @@ NOTE: The doctype tag just tells the browser that we are using HTML5 and not HTM
 
 <!-- ######################################################################################## -->
 
+6. a) On the current HTML an href is set to "images/cat.jpg" . Describe its
+position relative to the current html page.
+
+b) How do you indicate that a path is located within the current directory?
+
+c) How would you indicate a path starting in the parent directory of the current directory?
+
+d) Two directories above the current directory?
+
+e) Start from the project's root directory?
+
+-----
+
+a) This file would be looking in the directroy of the current html file, pointing towards another
+directory called images. In the images directory, there is a file called cat.jpg. 
+
+b) ./FILENAME.EXT     | Functionally there is no different in the a) scenario between 
+images/cat.jpg and ./images/cat.jpg 
+
+c) ../
+
+d) ../../
+
+e) /
+
+<!-- ######################################################################################## -->
+
 
 
 <!-- VOCAB --> 
@@ -146,3 +173,13 @@ web standards:
 compatible across different browsers, devices and platforms. 
 - the primary organization responsible for setting these best standards is the 
 world wide web consortium (AKA w3c)
+
+file paths: 
+- this describes the location of a file within a project's folder structure
+- file paths are used to reference files, such as when you are setting the 
+src of an img file.
+
+project root folder: 
+-This is the highest level in the hierarchy of the project's file structure
+- In VS Code, this will be the file furtherst to the right of the 
+expanding folders.
