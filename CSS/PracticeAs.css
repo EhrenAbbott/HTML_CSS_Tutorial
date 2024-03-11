@@ -30,6 +30,24 @@ to change.
 
 /* ######################################################################################## */
 
+/* 3. Create a CSS rule that applies to a general element.
+    Apply the same rule to a class. */
+
+    /* div { 
+        margin-top: 100px;
+    }
+
+    .main { 
+        margin-top: 100px;
+    } */
+
+/* NOTE: There are different conventions for naming classes for HTML elements, so 
+there is not necessarily one universal preference, but rather it will vary depending on
+the company and the project 
+/* ######################################################################################## */
+
+
+
 /* !VOCAB!  */
 
 /* selector: */
@@ -70,6 +88,12 @@ of images aligned to the left of a page and they are only taking up a portion of
 the screen, the area to the right of the images' respective container(s) will be blocked off so
 no other elements can be positioned there, regardless of the width of the image. 
 
+/* class */ 
+/* This is a built in HTML attribute that can be added to any element. They value 
+can be whatever you want it to be and the function of a class is to organize 
+similar elements that will have the same styling so as to avoid applying the styling 
+to a general element, such as div, which would instead apply that styling to
+every div that exists on the page.
 
 /* !LIST OF COMMON PROPERTIES! */ 
 /* background --> background color
