@@ -134,6 +134,42 @@ the display to flex, the children of the div will not flow from left to right
 on the horizontal axis. At this point they will *NOT* be centered horizontally, they
 will just be oriented horizontally but pushed to the left.
 -Setting justify-content to center will but the buttons in the middle of the screen.
+-Flexbox is only applied to it's *direct* children, not the chidren of its children etc. 
+This means that you can create subcategories of divs and intentionally apply flex
+to divs on certain level in order to make different orientations of elements displayed
+horizontally inside dive displayed vertically
+/* ######################################################################################## */
+
+/* 8. Assuming  a div intended to function as a business card, with two children elements 
+dispalyed next to one another. How would you make it so the business card itself is centered on 
+the web page and does not grow and shrink when the window gets bigger and smaller? 
+How would you get the business card div to display its children elements horiozontally? */
+
+
+/*-----HTML-----*/ 
+/* <div class="card">
+    <img
+        src="images/per.png"
+        alt="Per Harald Borgen smiling at the camera with a colorful background" class="avatar border-blue">
+    <div>
+        <h3>Per Harald Borgen</h3>
+        <p>Frontend Developer</p>
+        <h4>Oslo, Norway</h4>
+    </div>
+</div> */
+
+/*-----CSS-----*/
+
+/* .card { 
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+} */
+
+/*NOTE: Remember that for the .card div, the width and margin properties
+are applied to the div itself, whereas the flex and justify content properties 
+are applied to its children.
 /* ######################################################################################## */
 
 
@@ -196,6 +232,10 @@ every div that exists on the page.
 /* This refers to the interplay of spacing in and around an element 
 (from outside to inside); margin, border, padding, content
 
+/* utility class */ 
+/* This is a class dedicated to applying a CSS property, like a background color, 
+font size etc.  A utility class is normally named after the property that it applies. 
+
 /* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
 as this is unpleasant on the eyes. Instead you could modify one or both to make them
@@ -217,6 +257,8 @@ userway.org/contrast and putting in the foreground and background colors of an e
 - The method of centering inline elements as detailed in #6 using text-align is the simple
 but inflexible method, and using flexbox is slightly harder but much more flexible
 and is preferred by developers.
+- Writing alt texts: don't include "image of", as this is implied, and be concise (less than 125 chars)
+
 
 /* !LIST OF COMMON PROPERTIES! */ 
 /* background --> background color
@@ -232,3 +274,5 @@ and is preferred by developers.
     space-around (all white space distributed on both sides of all elements) / 
     space-between (all white space distributed only between elements, not on the side 
     where there is not adjacent element)
+/* alt --> | takes a string that describes an img. Enhances accessibility and functions as
+            a fallback if the image doesn't render properly. Also good for SEO.

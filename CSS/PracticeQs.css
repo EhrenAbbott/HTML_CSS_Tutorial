@@ -55,3 +55,25 @@ they occupy. How woudl you accomplish this?
 
 
 /* ######################################################################################## */
+
+/* 8. Assuming  a div intended to function as a business card, with two children elements 
+dispalyed next to one another. How would you make it so the business card itself is centered on 
+the web page and does not grow and shrink when the window gets bigger and smaller? 
+How would you get the business card div to display its children elements horiozontally? */
+
+/*-----HTML-----*/ 
+        /* <div class="card">
+            <img
+                src="images/per.png"
+                alt="Per Harald Borgen smiling at the camera with a colorful background" class="avatar border-blue">
+            <div>
+                <h3>Per Harald Borgen</h3>
+                <p>Frontend Developer</p>
+                <h4>Oslo, Norway</h4>
+            </div>
+        </div> */
+
+/*-----CSS-----*/
+
+
+/* ######################################################################################## */
