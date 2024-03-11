@@ -87,6 +87,28 @@ to make it so that there is space between the text (on all sides) and the edge o
 
 /* ######################################################################################## */
 
+/* 6. Assume you have two buttons that you want to be dispalyed inline, 
+but you also want them to be vertically aligned with the other elements above and below
+them, as well as horizontally aligned to appear next to each other in the middle of the line 
+they occupy. How woudl you accomplish this?
+
+.parent-div { 
+    text-align: center;
+ }
+
+ .btn { 
+    *REMOVE DISPLAY PROPERTY*
+ }
+
+/* NOTE: recall that to center something horizontally you need to set the display to 
+block and the left and right margins to auto. However, this display attribute 
+inherently means that the buttons will be stacked on top of one another. To work around this, 
+you can remove the block display from the buttons and give the parent div the text-align property
+and set it to center. 
+-Importantly, the text-align property is a bit of a misnomer, as works on *ALL* inline elements, 
+*NOT* just on text.
+/* ######################################################################################## */
+
 
 /* !VOCAB!  */
 
@@ -125,7 +147,8 @@ colors and is essentially a recipe for a color that indicates how much red, gree
 add.
 
 /* inline elements */ 
-/* HTML elements that are displayed next to one another (horizontally)
+/* HTML elements that are displayed next to one another (horizontally). 
+Some elements, such as buttons, are inline by default.
 
 /* block elements */ 
 /* HTML elements that stack up on top of one another (vertically). 
@@ -142,15 +165,36 @@ similar elements that will have the same styling so as to avoid applying the sty
 to a general element, such as div, which would instead apply that styling to
 every div that exists on the page.
 
-/* !PRINCIPLES OF (VISUAL) DESIGN! */
+/* the box model */ 
+/* This refers to the interplay of spacing in and around an element 
+(from outside to inside); margin, border, padding, content
+
+/* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
 as this is unpleasant on the eyes. Instead you could modify one or both to make them
 a couple of shades darker than white or lighter than black
+- Buttons will typically have more padding on the right and left hand sides than 
+on the top and bottom
+- When thinking about the height/width of an element it is important to take the 
+box model into consideration; the total height of an input field, for example, won't just 
+be the height of the field, but rather it will appear as that element's height *PLUS*
+the pixels occupies by the padding, border, and margins.
+- When setting the height for an input field, some browsers will not honor the 
+CSS height rule, so it is better to use the line-height property combined with padding; 
+the line-height property literally refers to the height of a line of text, and since text 
+is the only thing that goes in an input field, setting the line height is the 
+equivalent of setting the height of the inner content of the input field.
+- It is good to have a contrast ratio of 4.5 or higher to make elements 
+accessible for people who are visually impaired. The ratio can be checked by going to
+userway.org/contrast and putting in the foreground and background colors of an element
 
 /* !LIST OF COMMON PROPERTIES! */ 
 /* background --> background color
 /* color --> text color
 /* font-size 
 /* font-weight --> lighter/normal/bold
-/* text-align --> left/center/right
+/* text-align --> left/center/right  | Note that this works on all inline elements, not just text
 /* margin --> NUMpx/NUMem/NUMrem/NUMvh, vw
+/* border --> NUMpx solid COLOR
+/* border-radius --> NUMpx
+/* line-height
