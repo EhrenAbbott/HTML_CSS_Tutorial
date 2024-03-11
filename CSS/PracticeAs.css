@@ -107,6 +107,33 @@ you can remove the block display from the buttons and give the parent div the te
 and set it to center. 
 -Importantly, the text-align property is a bit of a misnomer, as works on *ALL* inline elements, 
 *NOT* just on text.
+
+/* ######################################################################################## */
+
+/* 7.  Do number #6 but center the buttons using the flexbox method.
+        Modify the CSS and HTML accordingly. 
+
+/*-----HTML-----*/
+
+/* <body>
+    <div class="nav-wrapper">
+        <div class="item">Shoes</div>
+        <div class="item">Hoodies</div>
+        <div class="item">T Shirts</div>
+    </div>
+</body> */
+
+/*-----CSS-----*/
+/* .nav-wrapper { 
+    display: flex;
+    justify-content: center;
+} */
+
+/*NOTE: The  default display of the div will be block, but just be changing
+the display to flex, the children of the div will not flow from left to right
+on the horizontal axis. At this point they will *NOT* be centered horizontally, they
+will just be oriented horizontally but pushed to the left.
+-Setting justify-content to center will but the buttons in the middle of the screen.
 /* ######################################################################################## */
 
 
@@ -187,6 +214,9 @@ equivalent of setting the height of the inner content of the input field.
 - It is good to have a contrast ratio of 4.5 or higher to make elements 
 accessible for people who are visually impaired. The ratio can be checked by going to
 userway.org/contrast and putting in the foreground and background colors of an element
+- The method of centering inline elements as detailed in #6 using text-align is the simple
+but inflexible method, and using flexbox is slightly harder but much more flexible
+and is preferred by developers.
 
 /* !LIST OF COMMON PROPERTIES! */ 
 /* background --> background color
@@ -198,3 +228,7 @@ userway.org/contrast and putting in the foreground and background colors of an e
 /* border --> NUMpx solid COLOR
 /* border-radius --> NUMpx
 /* line-height
+/* justify-content --> start (pushes to left) / end (to right) / center / 
+    space-around (all white space distributed on both sides of all elements) / 
+    space-between (all white space distributed only between elements, not on the side 
+    where there is not adjacent element)
