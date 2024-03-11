@@ -76,6 +76,17 @@ exactly the case, but that is generally not the case.
     right and left margin.
 /* ######################################################################################## */
 
+/* 5. Assuming text within a div that has a grey background, what CSS styling would you add 
+to make it so that there is space between the text (on all sides) and the edge of the div element? */
+
+/* div { 
+    padding: 20px;
+} */
+
+/*SEE: padding definition
+
+/* ######################################################################################## */
+
 
 /* !VOCAB!  */
 
@@ -97,8 +108,15 @@ in a CSS rule, background would be a property, and the specific color
 , such as blue, would be the value
 
 /* margin */ 
-/* This is spacing all around an element. It really just serves to create 
+/* This is spacing aroudn the *OUTSIDE* of an element. It really just serves to create 
 /* room in between different elements for visual appeal.
+
+
+/* padding */ 
+/* This is similar to a margin except it adds space on the *INTERIOR* of an element, 
+so if a div has padding, space will be added between the content, such as text, and the
+edges of the container.
+
 
 /* hex color code */ 
 /* This is a value of the various color properties in CSS that  starts with a
@@ -123,6 +141,11 @@ can be whatever you want it to be and the function of a class is to organize
 similar elements that will have the same styling so as to avoid applying the styling 
 to a general element, such as div, which would instead apply that styling to
 every div that exists on the page.
+
+/* !PRINCIPLES OF (VISUAL) DESIGN! */
+/* -It is good practice not to have pure black text displayed on a pure white backgroun, 
+as this is unpleasant on the eyes. Instead you could modify one or both to make them
+a couple of shades darker than white or lighter than black
 
 /* !LIST OF COMMON PROPERTIES! */ 
 /* background --> background color
