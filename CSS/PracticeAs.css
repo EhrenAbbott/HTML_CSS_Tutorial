@@ -44,8 +44,37 @@ to change.
 /* NOTE: There are different conventions for naming classes for HTML elements, so 
 there is not necessarily one universal preference, but rather it will vary depending on
 the company and the project 
+- Critically, the browser will automatically apply some minimal styling to your page, 
+such as a margin around the body element. To get rid of this, you would simply 
+target the body in the CSS file and explicitly set the margin to zero.
+- It is also important to note that if you have vertically stacked divs and you 
+you add a margin to the bottom of the top div, and a margin to the top fo the bottom div, 
+the result will *NOT* but a sum of the two margins, but rather they will collapse into each
+other, and the larger margin will always take precedence while the smaller 
+margin is essentially not applied. There are some specific scenarios where this is not
+exactly the case, but that is generally not the case.
 /* ######################################################################################## */
 
+/* 4. Create a CSS rule to horizontally center an element inside its parent div */
+
+/* img { 
+    display: block; 
+    width: 200px; 
+    margin-left: auto; 
+    margin-right: auto;
+} */
+
+
+/* NOTE: There are three conditions that need to be in place to center elements: 
+    1. The display property must be set to block-- an element cannot center itself if it
+    doesn't control full control of the horizontal space.
+    2. The element must have a width; an element cannot be centered inside the browser if it
+    is larger than the browser itself
+    3. The left and right margin of the element must be set to auto; set a single margin to auto
+    means that it takes up ALL of the available space on that side. Setting both sides to auto
+    means that all of the available space within the element will be evenly divided between the 
+    right and left margin.
+/* ######################################################################################## */
 
 
 /* !VOCAB!  */
