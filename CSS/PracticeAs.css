@@ -1,6 +1,23 @@
 /* ######################################################################################## */
 
-/* 1 */
+/* 1. The following two HTML elements are stacked vertically 
+when the browser window is smaller, but once the window is expanded, the 
+two elements sit next to one another on the horizontal axis. 
+What styling would you add to these two elements to make it so they
+are always position vertically regardless of the window size? */ 
+
+/* <body>
+    <img src="google.png" />
+    <input type="text" />
+</body> */
+
+img { 
+    display: block;
+}
+
+input { 
+    display: block;
+}
 
 /* ######################################################################################## */
 
@@ -20,5 +37,35 @@ such as color, margin, border etc.
 
 /* value: */ 
 /*--The styling that will be applied to the preceeding property. For example, 
-in a CSS rule, background-color would be a property, and the specific color 
+in a CSS rule, background would be a property, and the specific color 
 , such as blue, would be the value
+
+/* margin */ 
+/* This is spacing all around an element. It really just serves to create 
+/* room in between different elements for visual appeal.
+
+/* hex color code */ 
+/* This is a value of the various color properties in CSS that  starts with a
+hashtag and is followed by six letters and/or numbers. This is another way of indicating 
+colors and is essentially a recipe for a color that indicates how much red, green, and blue to 
+add.
+
+/* inline elements */ 
+/* HTML elements that are displayed next to one another (horizontally)
+
+/* block elements */ 
+/* HTML elements that stack up on top of one another (vertically). 
+A block level element blocks our the rest of the available space on the 
+horizontal axis so that nothing else can be placed there. So, if you have a column 
+of images aligned to the left of a page and they are only taking up a portion of 
+the screen, the area to the right of the images' respective container(s) will be blocked off so
+no other elements can be positioned there, regardless of the width of the image. 
+
+
+/* !LIST OF COMMON PROPERTIES! */ 
+/* background --> background color
+/* color --> text color
+/* font-size 
+/* font-weight --> lighter/normal/bold
+/* text-align --> left/center/right
+/* margin --> NUMpx/NUMem/NUMrem/NUMvh, vw

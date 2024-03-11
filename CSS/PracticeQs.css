@@ -1,5 +1,14 @@
 /* ######################################################################################## */
 
-/* 1 */
+/* 1. The following two HTML elements are stacked vertically 
+when the browser window is smaller, but once the window is expanded, the 
+two elements sit next to one another on the horizontal axis. 
+What styling would you add to these two elements to make it so they
+are always position vertically regardless of the window size? */ 
+
+/* <body>
+    <img src="google.png" />
+    <input type="text" />
+</body> */
 
 /* ######################################################################################## */
