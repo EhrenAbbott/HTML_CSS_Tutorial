@@ -236,6 +236,15 @@ every div that exists on the page.
 /* This is a class dedicated to applying a CSS property, like a background color, 
 font size etc.  A utility class is normally named after the property that it applies. 
 
+/* inheritence */ 
+/* -This reference to the idea that a parent div's CSS rules will automatically
+be acquired by all of its children elements. It is important to note that inheritence doesn't
+just happen with the direct children, but it works any number of layers down the descendent tree
+of the element that we are selecting
+- Not all CSS properties get inherited! For example, text-align gets inherited by *ALL*
+descendents, but flex get inherited *ONLY* by direct children. 
+-The importance of inheritence is that it allows us to avoid repeting our code and avoid bugs.
+
 /* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
 as this is unpleasant on the eyes. Instead you could modify one or both to make them
