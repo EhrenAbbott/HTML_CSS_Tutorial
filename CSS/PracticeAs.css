@@ -170,6 +170,20 @@ How would you get the business card div to display its children elements horiozo
 /*NOTE: Remember that for the .card div, the width and margin properties
 are applied to the div itself, whereas the flex and justify content properties 
 are applied to its children.
+
+/* ######################################################################################## */
+
+/* 9. What is the shorthand for setting all four margins with a single line of CSS code? 
+        What about setting two different margins (top/bottom and left/right)? */
+    
+/* margin: 10px 20px 30px 40px; 
+
+margin: 25px 35px; */
+
+/*NOTE: For setting four margins, the order is too, right, bottom, left (AKA clockwise) 
+and the order for setting two margins is top/bottom first and then right/left
+-Setting the margins this way is *BEST PRACTISE* as it avoids extra lines of code
+
 /* ######################################################################################## */
 
 
@@ -244,6 +258,22 @@ of the element that we are selecting
 - Not all CSS properties get inherited! For example, text-align gets inherited by *ALL*
 descendents, but flex get inherited *ONLY* by direct children. 
 -The importance of inheritence is that it allows us to avoid repeting our code and avoid bugs.
+
+/* web safe fonts */
+/* - When you visit a website via a client, the browser sends a request to the website's server
+which responds my providing the necessary components (HTML, CSS, assets, JS, etc.) as well as the "recipes"
+for the fonts to be used. However, for some websites they won't send you the fonts bc they are using a font
+this is already preinstalled on most clients; this preinstalled font is known as a web safe font
+and includes things like Arial, Verdena, and Helvetica.
+
+/* font stack */
+/* -This is a series of fonts as a CSS value for the font-family property; it is essentially
+a list of fonts, with the client trying to use the first one and then going to the second one, then
+third one, etc. if it can't find one.
+
+/* sans-serif / serif */
+/*-These are each two categories of fonts (not specific fonts).
+- Serif fonts contain decorate strokes at the ends of the letters and sans-serif does not.
 
 /* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
