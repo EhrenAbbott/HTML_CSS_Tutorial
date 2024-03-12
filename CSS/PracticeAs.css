@@ -211,6 +211,22 @@ h1 {
 
 /*NOTE: in the @font-face rule, the value for font-family is whatever you 
 want it to be; you are giving it a name here.
+- That using fonts this way means that your website has to load fonts from external sources 
+but this comes at a cost in terms of download cost and more data for users to download, which
+can slow down how fast your past load and negatively impact the user experience. 
+- There is not hard and fast rule as to how many fonts is too many, but two to three fonts per page 
+is a good rule of thumb
+
+/* ######################################################################################## */
+
+/* 12. Write a sentence with an h1 tag and add an element that allows you to target a
+single word.
+
+<h3>Click <span class="bold">here</span>!</h3>
+
+/*NOTE: spans are useful because they are  inline elements; using a div to target
+a single word would break it up onto a new line bc divs are block based.
+
 /* ######################################################################################## */
 
 
@@ -303,6 +319,10 @@ third one, etc. if it can't find one.
 /*-These are each two categories of fonts (not specific fonts).
 - Serif fonts contain decorate strokes at the ends of the letters and sans-serif does not.
 
+/* glyph */ 
+/* -In typography this refers to as graphical unit, such as a single letter, but it may also 
+refer to something like a diacritic (the tilde over an 'ñ')
+
 /* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
 as this is unpleasant on the eyes. Instead you could modify one or both to make them
@@ -325,6 +345,9 @@ userway.org/contrast and putting in the foreground and background colors of an e
 but inflexible method, and using flexbox is slightly harder but much more flexible
 and is preferred by developers.
 - Writing alt texts: don't include "image of", as this is implied, and be concise (less than 125 chars)
+- Try to limit yourself to 2-3 different fonts per page so as not to slow down how fast the page loads. 
+Make sure font files dont contain more glyphs than you need, and consider using newer
+font formats, like WOFF2, which has much better compression and therefore smaller file sizes.
 
 
 /* !LIST OF COMMON PROPERTIES! */ 
