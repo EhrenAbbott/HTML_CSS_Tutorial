@@ -197,6 +197,22 @@ body {
 
 /* ######################################################################################## */
 
+/* 11. Assume you have downloaded a  font file  called MyFont.tff that is located 
+in the project root folder. What would you do to get it set up and apply it to an element?
+
+@font-face {
+    src: url("MyFont.ttf");
+    font-family: CoolFont;
+}
+
+h1 { 
+    font-family: CoolFont;
+}
+
+/*NOTE: in the @font-face rule, the value for font-family is whatever you 
+want it to be; you are giving it a name here.
+/* ######################################################################################## */
+
 
 /* !VOCAB!  */
 
@@ -267,7 +283,8 @@ be acquired by all of its children elements. It is important to note that inheri
 just happen with the direct children, but it works any number of layers down the descendent tree
 of the element that we are selecting
 - Not all CSS properties get inherited! For example, text-align gets inherited by *ALL*
-descendents, but flex get inherited *ONLY* by direct children. 
+descendents, but flex get inherited *ONLY* by direct children. Also, a button's text 
+does *NOT* get by the text set in the body element, and it must speciifcally be assigned
 -The importance of inheritence is that it allows us to avoid repeting our code and avoid bugs.
 
 /* web safe fonts */
