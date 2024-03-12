@@ -82,3 +82,9 @@ How would you get the business card div to display its children elements horiozo
         What about setting two different margins (top/bottom and left/right)?
     
 /* ######################################################################################## */
+
+/* 10. Set a photo as the background and make it so that when the browser window changes size, 
+the images scales proportionally with it (as opposed to only revealing a detail of the images
+when the window is small */
+
+/* ######################################################################################## */

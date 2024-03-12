@@ -186,6 +186,17 @@ and the order for setting two margins is top/bottom first and then right/left
 
 /* ######################################################################################## */
 
+/* 10. Set a photo as the background and make it so that when the browser window changes size, 
+the images scales proportionally with it (as opposed to only revealing a detail of the images
+when the window is small */
+/* 
+body {
+    background-image: url("images/universe.jpg");
+    background-size: cover;
+} */
+
+/* ######################################################################################## */
+
 
 /* !VOCAB!  */
 
