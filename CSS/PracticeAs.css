@@ -31,7 +31,8 @@ to change.
 /* ######################################################################################## */
 
 /* 3. Create a CSS rule that applies to a general element.
-    Apply the same rule to a class. */
+    Apply the same rule to a class.
+    And to an id.  */
 
     /* div { 
         margin-top: 100px;
@@ -39,7 +40,13 @@ to change.
 
     .main { 
         margin-top: 100px;
+    }
+
+    #box { 
+        margin-top: 100px;
     } */
+
+
 
 /* NOTE: There are different conventions for naming classes for HTML elements, so 
 there is not necessarily one universal preference, but rather it will vary depending on
@@ -322,6 +329,11 @@ third one, etc. if it can't find one.
 /* glyph */ 
 /* -In typography this refers to as graphical unit, such as a single letter, but it may also 
 refer to something like a diacritic (the tilde over an 'ñ')
+
+/* id (attribute) */ 
+/* IDs are used to apply CSS styling to a particular element, but they are distinct from classes 
+in that all ids are unique and will only be applied once in the whole document; they are not
+intended to be reused.
 
 /* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
