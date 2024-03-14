@@ -244,7 +244,7 @@ a single word would break it up onto a new line bc divs are block based.
 
 /*NOTE: The first numerical value is how much you want to push the shadow to the right. A negative
 value here pushes it to the left. The second value pushes the shadow downwards, and a negative 
-here pushes it up. The third value is the color of the shadow. 
+here pushes it up. The third value is blur and is optional. The fourth value is the color of the shadow. 
 
 /* ######################################################################################## */
 
@@ -392,6 +392,9 @@ Make sure font files dont contain more glyphs than you need, and consider using 
 font formats, like WOFF2, which has much better compression and therefore smaller file sizes.
 - When workig with images as background it can be a good idea to fetch colors from the background photo
 to use as the pages color scheme; you can go to coolors.com and choose a palette from a photo
+- To made text look like it has a glow, you can set the background to be slightly darker than
+the text, so if they text is white, the background could be whitesmoke, and then create a textshadow
+where the first two values are 0, the blur value is about 5px, and the color value is anything. 
 
 
 /* !LIST OF COMMON PROPERTIES! */ 
