@@ -236,6 +236,18 @@ a single word would break it up onto a new line bc divs are block based.
 
 /* ######################################################################################## */
 
+/*  13. Add shadow to text. What do the different values represent? */
+
+/* h1 { 
+    text-shadow: 5px 5px black;
+} */
+
+/*NOTE: The first numerical value is how much you want to push the shadow to the right. A negative
+value here pushes it to the left. The second value pushes the shadow downwards, and a negative 
+here pushes it up. The third value is the color of the shadow. 
+
+/* ######################################################################################## */
+
 
 /* !VOCAB!  */
 
@@ -335,6 +347,24 @@ refer to something like a diacritic (the tilde over an 'ñ')
 in that all ids are unique and will only be applied once in the whole document; they are not
 intended to be reused.
 
+/* .webp (extension) */
+/* -This is a file format similar to GIFs, but .webp has better compression and doesn't use 
+as much data when sent from a server to a client. Giphy.com can be used to download
+.webp images and it can be implemented in the exact same way as background-image.
+
+/* replaced element */ 
+/* -An element that exists outisde the scope of CSS (its contents are not affected by CSS).
+Its position and size can be determined by CSS, but not its actual content. The most common example
+of this is the img tag, where the media's intrinsic file size determines how it will appear on the page;
+a photo that is 200 x 200 will immedaitely appear smaller in the window than a 500 x 500 image (assuming 
+no additional CSS styling is applied). The concept of replaced elements is essential to embedding external
+content.
+
+/* hero section (of webpage)*/
+/* -This is the prominent part at the top of most webpages that functions as the first glimpse of the page 
+ and extends the full width of the page; it may contain a logo, title, call to action, background image etc.
+
+
 /* !PRINCIPLES AND BEST PRACTICES OF DESIGN! */
 /* -It is good practice not to have pure black text displayed on a pure white backgroun, 
 as this is unpleasant on the eyes. Instead you could modify one or both to make them
@@ -360,13 +390,15 @@ and is preferred by developers.
 - Try to limit yourself to 2-3 different fonts per page so as not to slow down how fast the page loads. 
 Make sure font files dont contain more glyphs than you need, and consider using newer
 font formats, like WOFF2, which has much better compression and therefore smaller file sizes.
+- When workig with images as background it can be a good idea to fetch colors from the background photo
+to use as the pages color scheme; you can go to coolors.com and choose a palette from a photo
 
 
 /* !LIST OF COMMON PROPERTIES! */ 
 /* background --> background color
 /* color --> text color
 /* font-size 
-/* font-weight --> lighter/normal/bold
+/* font-weight --> lighter/normal/bold | also takes num value
 /* text-align --> left/center/right  | Note that this works on all inline elements, not just text
 /* margin --> NUMpx/NUMem/NUMrem/NUMvh, vw
 /* border --> NUMpx solid COLOR
