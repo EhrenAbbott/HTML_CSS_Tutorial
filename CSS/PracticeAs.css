@@ -248,6 +248,13 @@ here pushes it up. The third value is blur and is optional. The fourth value is 
 
 /* ######################################################################################## */
 
+/* 14. Create a CSS group selector for mutliple HTMl element */
+
+/* h1, h2 { 
+    text-shadow: 0px, 0px, 1px black;
+} */
+
+/* ######################################################################################## */
 
 /* !VOCAB!  */
 
