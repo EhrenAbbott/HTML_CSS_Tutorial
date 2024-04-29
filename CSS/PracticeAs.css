@@ -290,7 +290,7 @@ so it is best to stick with 'start' and 'end' bc it will work for both.
 
 /* ######################################################################################## */
 
-/* What is the default property of align-items and how does it interact with height?
+/* 17. What is the default property of align-items and how does it interact with height?
 
 /* If the align-items property is not explicitly set, the default is 'stretch'. This means 
 that, using the example from #15, the items that are inside the container posessing this default property will be expanded vertically
@@ -298,6 +298,24 @@ down to the bottom of the outermost div and will just be filled with whatever th
 themselves won't necessarily be stretched)
 To override this, you need to set a height for the items in the container so that so not
 stretch to do the bottom fo the outermost div. 
+
+/* ######################################################################################## */
+
+/* 18. Building off of the set up in #15, what if you wanted to have the items in the flexbox
+to stack up on top fo one another (and be centered, say, horixontally with that orientation?)
+What can't you just removed the display: flex property to have them go back to their default
+block arrangement? 
+
+/* Justify-content and align-items only work with the diplay set to flex, so if you removed this, 
+the items would be stacked vertically but would not longer be centered horizontaly or vertically. 
+To remedy this, you could have to use: */
+
+/* .container { 
+    display: flex;
+    flex-direction: column;
+} */
+
+/* This is the first step in the solution, but it also creates a new problem... (continued below)
 
 /* ######################################################################################## */
 

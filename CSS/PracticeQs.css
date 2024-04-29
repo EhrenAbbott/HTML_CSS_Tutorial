@@ -119,6 +119,13 @@ Are there any caveats? */
 
 /* ######################################################################################## */
 
-/* What is the default property of align-items and how does it interact with height?
+/* 17. What is the default property of align-items and how does it interact with height?
+
+/* ######################################################################################## */
+
+/* 18. Building off of the set up in #15, what if you wanted to have the items in the flexbox
+to stack up on top fo one another (and be centered, say, horixontally with that orientation?)
+What can't you just removed the display: flex property to have them go back to their default
+block arrangement? 
 
 /* ######################################################################################## */
