@@ -290,6 +290,16 @@ so it is best to stick with 'start' and 'end' bc it will work for both.
 
 /* ######################################################################################## */
 
+/* What is the default property of align-items and how does it interact with height?
+
+/* If the align-items property is not explicitly set, the default is 'stretch'. This means 
+that, using the example from #15, the items that are inside the container posessing this default property will be expanded vertically
+down to the bottom of the outermost div and will just be filled with whatever the background color (and the images
+themselves won't necessarily be stretched)
+To override this, you need to set a height for the items in the container so that so not
+stretch to do the bottom fo the outermost div. 
+
+/* ######################################################################################## */
 
 
 
