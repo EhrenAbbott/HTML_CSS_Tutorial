@@ -276,7 +276,24 @@ side of the larger div.
 left of the larger div)
 - Align-items: center is responsible for aligning the images on the *VERTICAL* axis, and justify-content: center 
 aligns them horizontally. */
+
 /* ######################################################################################## */
+
+/* 16. What are the most commons values you will be using with justify-content and align-items?
+Are there any caveats? */
+
+/* Justify-conent: start, center, end, space-around, space-evenly, space-between
+align-items: start, center, end
+
+NOTE: 'left' and 'right work as values for jusitfy-content, but *NOT* for align-items, 
+so it is best to stick with 'start' and 'end' bc it will work for both.
+
+/* ######################################################################################## */
+
+
+
+
+
 
 /* !VOCAB!  */
 
