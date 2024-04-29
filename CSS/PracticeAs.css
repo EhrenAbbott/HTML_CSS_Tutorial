@@ -319,6 +319,23 @@ To remedy this, you could have to use: */
 
 /* ######################################################################################## */
 
+/* 19. What is the new problem created in #18? How does it get fixed?
+With this in mind, how would you have the vertically stacked flexbox items be centered 
+both horzontally and vertically?
+
+/* When the flex-direction is set to colum, justify-content now controls the  *VERTICAL* axis and 
+align-items now control the *HORIZONTAL* axis: these two properties essentially just get flipped: */
+
+/* .container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* ######################################################################################## */
+
 
 
 
