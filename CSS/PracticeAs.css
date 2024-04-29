@@ -254,6 +254,28 @@ here pushes it up. The third value is blur and is optional. The fourth value is 
     text-shadow: 0px, 0px, 1px black;
 } */
 
+/* NOTE: The comma here is important, and this rule will mean something else without it
+
+/* ######################################################################################## */
+
+/* 15. Assume three square images grouped together in a div (id="container"), which is located in another much larger div.
+Center flexbox items on the vertical axis using the correct property.
+Then add a property to center them horizontally as well*/
+
+
+/* .container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* NOTE: Remember that by default divs are display: block, so without any styling the images will start out 
+stacked vertically on top of one another in their container, which will be pushed to the left 
+side of the larger div.
+- Changing the display to flex will alter their orientation so that they are in a row (but still at the top 
+left of the larger div)
+- Align-items: center is responsible for aligning the images on the *VERTICAL* axis, and justify-content: center 
+aligns them horizontally. */
 /* ######################################################################################## */
 
 /* !VOCAB!  */
