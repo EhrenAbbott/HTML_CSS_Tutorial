@@ -336,6 +336,19 @@ align-items now control the *HORIZONTAL* axis: these two properties essentially 
 
 /* ######################################################################################## */
 
+/* 20. Create an image in a div *without* using the img element. 
+        Make it so that the entirety of the image is fully displayed in the div (and not just 
+        a segment or portion of the whole image) */
+
+/* .myDiv { 
+    width: 400px;
+    height: 400px; 
+    background-image: url("my-image.jpg");
+    background-size: cover;
+} */
+
+/* ######################################################################################## */
+
 
 
 
