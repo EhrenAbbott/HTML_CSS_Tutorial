@@ -349,6 +349,20 @@ align-items now control the *HORIZONTAL* axis: these two properties essentially 
 
 /* ######################################################################################## */
 
+/* 21. For the div created in #20, the image div will not be centered even if text-align is set to 'center'
+        Why is this? 
+        Why can't you just change the display to inline?
+
+-text-align will only work with *INLINE* elements, and now that this photo is being added with a div, 
+the default display is block, rendering text-align useless.
+- You can't just change display to 'inline' because you
+can't force the width or height of an inline element (they are only as large as the content is), so those properties will just be ignored, 
+and the div will not have any dimensions (recall that div width and height need to be set when 
+using background-image, or else the div will just be completely flat, nc it technically does't have any content)
+- so to avoid all of these pitfalls, we can just set the left and right element to auto, bc this works for block
+elements with a set width
+
+/* ######################################################################################## */
 
 
 

@@ -141,3 +141,9 @@ both horzontally and vertically?
         a segment or portion of the whole image)
 
 /* ######################################################################################## */
+
+/* 21. For the div created in #20, the image div will not be centered even if text-align is set to 'center'
+        Why is this? 
+        Why can't you just change the display to inline?
+
+/* ######################################################################################## */
