@@ -364,10 +364,20 @@ elements with a set width
 
 /* ######################################################################################## */
 
+/* 22. Add a pseudo class to all link elements to change the color of the link when the curser is on it.
+
+a:hover {
+    background-color: #ba181b;
+}
+
+/* ######################################################################################## */
+
 
 
 
 /* !VOCAB!  */
+
+
 
 /* selector: */
 /* -- The CSS syntactic component that indicates which element the styling will be applied to:*/
