@@ -164,6 +164,24 @@ support.
 - The type attribute is optional, but it helps a but bc it allows the browser to check if it can support 
 that format without automatically retrieving it and if it doesn't support the file format, it 
 won't attempt to retrieve it.
+
+<!-- ######################################################################################## -->
+
+12. Video elements are made similarly to audio elements but there are some extra 
+attributes needed for an optimal user experience. Create a video element with the
+appropriate attributes. 
+
+<video controls width="400" height="225">
+    <a href="media/video/scrimbaPodTom.mp4">download video</a>
+    <source src="media/video/scrimbaPodTom.mp4" type="video/mp4">
+    <source src="media/video/scrimbaPodTom.webm" type="video/webm">
+</video>
+
+NOTE: without the width or height attributes the display would most likely be far larger 
+than you would need it to be and take up too much of the page.
+- Audio and vudeo controls are not controlled directly by the DOM, they are very browser/platform 
+specific, so not every browser plays video and audio in the same way.
+
 <!-- ######################################################################################## -->
 
 
