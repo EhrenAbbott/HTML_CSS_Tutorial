@@ -146,6 +146,25 @@ be no panel you can interact with the play the clip, the area will just be blank
 
 <!-- ######################################################################################## -->
 
+11. If the user's browser can't handle an mp3 file, for example, they will not be able to access 
+    the audio. How do you work around that issue and implement backup file formats to be used
+    by a browser that does not support the first format?
+
+    <audio controls>
+        <a href="media/audio/scrimbaPodTom.mp3">download audio</a>
+        <source src="media/audio/scrimbaPodTom.mp3" type="audio/mp3">
+        <source src="media/audio/scrimbaPodTom.wav" type="audio/wav">
+    </audio>
+
+NOTE: having the src attribute denote the file to be used, as in #11, can be problematic
+becuase you can only specify *one* file inside the audio tag. Using the self-closing source element, 
+however, is beneficial bc there is not limit to how many you can use; if the browser doesn't 
+support the first file type, it will just try the subsequent one until it finds one that it does 
+support.  
+- The type attribute is optional, but it helps a but bc it allows the browser to check if it can support 
+that format without automatically retrieving it and if it doesn't support the file format, it 
+won't attempt to retrieve it.
+<!-- ######################################################################################## -->
 
 
 
