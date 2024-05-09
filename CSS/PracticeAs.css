@@ -507,7 +507,7 @@ Its position and size can be determined by CSS, but not its actual content. The 
 of this is the img tag, where the media's intrinsic file size determines how it will appear on the page;
 a photo that is 200 x 200 will immedaitely appear smaller in the window than a 500 x 500 image (assuming 
 no additional CSS styling is applied). The concept of replaced elements is essential to embedding external
-content.
+content. Audio and video tags are further examples of replaced elements.
 
 /* hero section (of webpage)*/
 /* -This is the prominent part at the top of most webpages that functions as the first glimpse of the page 

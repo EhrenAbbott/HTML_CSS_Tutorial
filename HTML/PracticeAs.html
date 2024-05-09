@@ -181,9 +181,52 @@ NOTE: without the width or height attributes the display would most likely be fa
 than you would need it to be and take up too much of the page.
 - Audio and vudeo controls are not controlled directly by the DOM, they are very browser/platform 
 specific, so not every browser plays video and audio in the same way.
+- Setting the width and height (in pixels) should always be done; this reserves the required
+space on the page, and without this the layout can change as the page loads, and content will sort of 
+bounce around the page bc things are loading in larger than expecting and shifting the content 
+as you're reading it (this is what the IGN site does when I look at it on my phone
+- Keep in mind that the height and width attributes are's actually resizing the file *itself*,
+they are just determining the size of the display on the page, and if you actually need to 
+resize a file this has to be done  before using it on the page with an external program intended for this
+purpose.
 
 <!-- ######################################################################################## -->
 
+13. Create a table with three rows and three columns. 
+    Make the first row the headings for the content 
+    below.
+    Have two cells in a row essetially looks merged.
+
+    <table>
+        <caption>My concerts</caption>
+        <thead>
+            <tr>
+                <th>Artist</th>
+                <th>Location</th>
+                <th>Cost</th>
+            </tr>
+        <thead>
+        <tbody>
+            <tr>
+                <td>Blur</td>
+                <td>Exeter</td>
+                <td>£50</td>
+            </tr>
+            <tr>
+                <td colspan="2">Billie Eilish</td>
+                <td>£90</td>
+            </tr>
+        <tbody>
+    </table>
+
+NOTE: <tr> = table row 
+      <td> = table data 
+    <th> = table heading
+- The thead, tbody, and th tags are mostly just used for organizational purposes 
+and for screen readers
+- It is better to use the caption tag instead of just using an h1 bc this also helps with accessbility
+
+<!-- ######################################################################################## -->
 
 
 <!-- VOCAB --> 
